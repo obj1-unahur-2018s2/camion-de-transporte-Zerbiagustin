@@ -58,13 +58,32 @@ object bateriaAntiaerea {
 
 	var _cargado = false
 	method cargado(elem){
-		if (elem=="si")
+		if (elem=="si"){
+			_cargado=true
+		}
+		
 	}
-	method peso(cosa){
-		if(_cargado)
-{
-	
-}	}
-
+	method peso(){
+		if(_cargado){
+			return 200
+		}
+		else{
+			return 300
+		
+			}
 }
 
+	method nivelPeligrosidad(){
+		if(_cargado){
+			return 0
+		}
+		else {
+			return 100 
+		}
+	}
+	
+	}
+
+object contenedorPortuario{
+	
+}
